@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace; 
+    background-color: #1e1e1e; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+
+.container {
+    text-align: center;
+}
+
+
+#hiddenMessage {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.pixel-text {
+    font-size: 24px;
+    color: #ffd700;
+    text-shadow: 1px 1px 0px #000, 
+                 2px 2px 0px #000,
+                 3px 3px 0px #000;
+}
+
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: 'Courier New', monospace;
+    background-color: #4caf50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1); 
+}
+
+button:active {
+    background-color: #388e3c;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
